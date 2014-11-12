@@ -7,6 +7,17 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.Stack;
 
+/**
+ * 
+ * @author cawang
+ *
+ * @param <T>
+ * 
+ * 满二叉树的深度： log2(n+1), 2是底数
+ * 完全二叉树的深度： log2n+1, 2是底数
+ * 
+ * 
+ */
 public class MyBinaryTree<T> {
 	private MyBinaryTree<T> leftChild;
 	private MyBinaryTree<T> rightChild;
@@ -161,13 +172,17 @@ public class MyBinaryTree<T> {
 		
 	}
 
-	
+	/**
+	 * wrong
+	 * @param sequence
+	 * @return
+	 */
 	public MyBinaryTree<Integer> makeTreeIn(Integer[] sequence) {
 		int startIdx=0;
 		if(sequence==null)return null;
 		
 		else{
-			MyBinaryTree tree=createTreeNode(sequence[startIdx++]);
+			MyBinaryTree tree=createTreeNode(sequence[startIdx++]);//deal with null
 			while(startIdx<=sequence.length-1){
 				MyBinaryTree tempRoot=new MyBinaryTree();
 				tempRoot.leftChild=tree;

@@ -31,6 +31,13 @@ public class BinarySearch {
 		}
 		range[0]=high;
 		range[1]=low;
+		if(low>=array.length){
+			range[0]=low;
+		}
+		if(high<=0){
+			range[0]=0;
+		}
+		//no matter what, low is the insert position
 		return range;
 	}
 	@Test
@@ -38,6 +45,8 @@ public class BinarySearch {
 		Integer[] array1={1,2,4,5};
 		Integer[] array2={1,2,4,4,5};
 		System.out.println(Arrays.toString(search_range(array1, 3)));
-		System.out.println(Arrays.toString(search_range(array1, 3)));
+		System.out.println(Arrays.toString(search_range(array2, 3)));
+		System.out.println(Arrays.toString(search_range(array1, 6)));
+		System.out.println(Arrays.toString(search_range(array1, 0)));
 	}
 }

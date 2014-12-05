@@ -8,7 +8,7 @@ public class RandomXMLPrototype {
 	//pre-defined command pattern
 	public final static String DICTIONARY_COMMAND_TEST1="command1: param: %, param: %";
 	public final static String DICTIONARY_COMMAND_TEST2="command2: param: %";
-	public final static String DICTIONARY_COMMAND_TEST3="command3: param: %, param: %, param: %, parma: %";
+	public final static String DICTIONARY_COMMAND_TEST3="command3: param: %attribute, param: %metric, param: %, parma: %";
 	//pre-defined all parameter types
 	public final static int DICTIONARY_PARAMTYPE_ATTIRBUTE=1;
 	public final static int DICTIONARY_PARAMTYPE_METRIC=2;

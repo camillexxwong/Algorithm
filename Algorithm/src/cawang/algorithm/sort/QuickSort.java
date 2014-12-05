@@ -48,6 +48,7 @@ public class QuickSort extends AbstractSort {
 	 * @return
 	 * 
 	 * calculate the expected position of array[low], and put it to the right position
+	 * and sort array in-place
 	 */
 	private int _partition(Comparable[] array, int low, int high){
 		//if(low>=high) return low;
